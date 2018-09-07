@@ -1,0 +1,100 @@
+/* applying media queries */
+
+.subject-matter{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content, .content-image, .works{
+  order: 10;
+}
+
+/*  Media query for viewport less than 410px.
+    Here 'work' images are modified (Minor Breakpoint)
+*/
+
+@media screen and (max-width: 600px){
+  .work-1img, .work-2img, .work-3img{
+    width: 80%;
+    position: relative;
+    min-height: 70px;
+    float: left;
+  }
+}
+
+/*  Media query for viewport less than 600px.
+    Here navigation menu along with 'works' is modified.
+*/
+
+@media screen and (max-width: 600px){
+  body{
+    font-size: 16px;
+  }
+
+  .nav{
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    transform: translate(-250px, 0);
+    transition: transform 0.3s ease;
+    z-index: 10;
+    background: radial-gradient(#1E90FF, #2F4F4F);
+  }
+
+  nav.open{
+    transform: translate(0, 0);
+  }
+
+.work-1, .work-2, .work-3{
+  box-sizing: border-box;
+  width: 35%;
+  text-align: center;
+  min-height:100px;
+  padding: 1em;
+  margin: 1em;
+  float: left;
+}
+}
+
+/*
+   Media query for viewport greater than 600px.
+   Here the navigation menu disappears and navigation bar shows up.
+   Flex properties are also applied.
+*/
+
+@media screen and (min-width: 600px){
+  a#menu svg{
+    display: none;
+  }
+
+  .nav-items{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+  }
+
+  .content-image{
+    width: 60%;
+    order: 0;
+  }
+
+  .content{
+  width: 40%;
+  order: 1;
+  line-height: 25px;
+  }
+
+}
+
+/*
+    Media query for viewport greater than 800px.
+    Mostly fluid pattern is used by apllying margins to the layout
+*/
+
+@media screen and (min-width: 800px){
+  main, .header, .subject-matter, .nav{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}

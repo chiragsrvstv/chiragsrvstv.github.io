@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title> My Portfolio </title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel = "stylesheet" href="css/portstyles.css">
+	<link rel = "stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="inside-header">
+			<img class="header-logo" src="img/html-2188441_960_720.jpg" alt="Logo">
+			<div class="header-desc">
+				<h2 class="header-title"> CHIRAG SRIVASTAVA </h2>
+				<h3 class="header-sub"> Full Stack Web Developer </h3>
+			</div>
+			<a id = "menu" class="header-menu">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+				</svg>
+			</a>
+		</div>
+	</header>
+
+	<nav id = "drawer" class="nav">
+		<ul class="nav-list">
+			<li class="nav-items"><a href="#"> About Me </a></li>
+			<li class="nav-items"><a href="#"> Skills </a></li>
+			<li class="nav-items"><a href="#"> Achievements </a></li>
+			<li class="nav-items"><a href="#"> Blog </a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section class = "subject-matter">
+
+			<img class="content-image" src="img/computer-1245714.jpg" alt="Cover Photo">
+
+			<div class="content">
+					<h1> The Future Is Web </h1>
+					<p> Hey there, I am a Full Stack Web Developer
+						and I create some really cool projects. You can always count on me
+						and I will never ever disappoint you. </p>
+			</div>
+
+			<section class="works">
+				<h2> Featured Works </h2>
+				<div class="work-1">
+					<a href="https://github.com/chiragsrvstv/Movies-Project.git">
+						 <img class="work-1img" src="img/mobile-devices-2017982_960_720.jpg"
+						  alt=""> Movie Trailer </a>
+				</div>
+				<div class="work-2">
+					<a href="https://github.com/chiragsrvstv">
+						<img class="work-2img" src="img/mobile-devices-2017982_960_720.jpg"
+						alt=""> Appify </a>
+				</div>
+				<div class="work-3">
+					<a href="https://github.com/chiragsrvstv">
+						<img class="work-3img" src="img/mobile-devices-2017982_960_720.jpg"
+						alt=""> Sunflower </a>
+				</div>
+
+			</section>
+
+		</section>
+
+			<footer class="footer">
+				<ul>
+					<li> <a href="#"> Get in touch </a> </li>
+					<li> <a href="https://twitter.com/ChiragSrvstv"> Follow Me </a> </li>
+					<li> <a href="mailto:chirag.srivastava@live.com">	Email </a> </li>
+				</ul>
+			</footer>
+
+		</main>
+
+		<script>
+		      /*
+		       *  This scripts opens the menu when the hamburger icon is clicked.
+		       */
+		      var menu = document.querySelector('#menu');
+		      var main = document.querySelector('main');
+		      var drawer = document.querySelector('.nav');
+
+		      menu.addEventListener('click', function(e) {
+		        drawer.classList.toggle('open');
+		        e.stopPropagation();
+		      });
+		      main.addEventListener('click', function() {
+		        drawer.classList.remove('open');
+		      });
+
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+/* Styling the body */
+
+body{
+  background: #2F4F4F no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  color: white;
+  font: bold 1.2em 'Ubuntu', sans-serif;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+header, nav, footer, section, article, div{
+  box-sizing: border-box;
+}
+
+/* Styling the header*/
+
+.header{
+  box-shadow: 10px 5px 5px black;
+  min-height: 50px;
+  width: 100%;
+  margin: 0.7em;
+}
+
+.inside-header{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  }
+
+
+.header-desc{
+  display: inline-block;
+  margin-right: 1.2em;
+  margin-top: 1.2em;
+  vertical-align: center;
+  }
+
+
+.header-logo{
+  position: relative;
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 12px;
+  vertical-align: top;
+  width: 20%;
+  max-height: 300px;
+
+}
+
+/* Formatting the Navigation Menu*/
+
+.nav{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-list {
+  width: 100%;
+  padding: 1.2em;
+  margin: 1em;
+}
+
+
+.nav-items{
+  width: 80%;
+  padding: 1em;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+.nav a{
+  width: 100%;
+  color: white;
+  padding: 1.5em;
+  margin: auto;
+}
+
+/* This formats hamburger icon*/
+
+a#menu svg {
+  position: relative;
+  width: 50px;
+  fill: #DCDCDC;
+  cursor: pointer;
+  padding: 1.5em;
+}
+
+/* Styling the image and main content*/
+
+.content-image{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 1.2em;
+  margin: auto;
+  position: relative;
+  float: left;
+}
+
+.content{
+  width: 100%;
+  padding: 1.2em;
+  margin: auto;
+  line-height: 30px;
+  text-align: left;
+
+}
+
+/* Styling featured works section */
+
+.works{
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1em;
+  margin: 1px;
+  }
+
+.work-1, .work-2, .work-3{
+  box-sizing: border-box;
+  width: 25%;
+  text-align: center;
+  min-height:100px;
+  padding: 1em;
+  margin: 1em;
+  float: left;
+  }
+
+  .works a{
+    color: white;
+    font: inherit;
+  }
+
+.work-1img, .work-2img, .work-3img{
+  position: relative;
+  width: 75%;
+  min-height:140px;
+  padding: 1.2em;
+  margin: auto;
+}
+
+/* Styling footer*/
+
+.footer{
+  display: inline-block;
+  margin: 0.5em;
+  margin-left: 0;
+  padding: 1em;
+  width: 100%;
+  border-top: 2px solid white;
+  color: white;
+}
+
+.footer li{
+  display: inline-block;
+  padding: 1em;
+  margin: 0.5em;
+  text-align: center;
+}
+
+.footer a{
+  color: white;
+  font-size: 90%;
+}
